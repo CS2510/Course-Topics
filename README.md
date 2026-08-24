@@ -44,7 +44,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ## 💡New Idea: Macro view of methods of drawing in HTML
 
 - Box Model
-    - ![NY Times Cover for Pearl Harbor](https://www.nypl.org/scout/_next/image?url=https%3A%2F%2Fdrupal.nypl.org%2Fsites-drupal%2Fdefault%2Ffiles%2Fstyles%2Fmax_width_960%2Fpublic%2Fblogs%2Ff55b9a989d12b3c172d3510da17478ad.png%3Fitok%3DB3nyQ1YD&w=1920&q=90)
+    - ![NY Times Cover for Pearl Harbor](https://imgs.search.brave.com/gCMYaUi_uIB4kT_cUoc9jL9VtQyFSa_GWYGpQtgLIcA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFtem02Z3IzRkwu/anBn)
     - 🔗Addition information at:
       - [W3 Schools about the box model](https://www.w3schools.com/css/css_boxmodel.asp)
       - [MDN about the box model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
