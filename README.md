@@ -39,6 +39,7 @@ These are the topics we are going to cover in class each day. Links to [example 
   - 🔗Additional information: [A website about adding vectors](https://mathworld.wolfram.com/VectorAddition.html)
 
 ## 💡New Idea: Physics (Math/Simulation)
+- We can use vectors to model the velocity of a game object
 - Velocity
   - 🔗Additional information: [A Wikipedia article about Velocity](https://en.wikipedia.org/wiki/Velocity)
 
@@ -57,17 +58,13 @@ These are the topics we are going to cover in class each day. Links to [example 
   - 🔗Additional information: [MDN article about class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
 
 ## 👩‍💻Activity
-- Create a simple bouncing triangle simulation using a new Vector2 class. (See Final Code section.)
+- Create a simple moving game object simulation using the new Vector2 class. 
 
 ## 🤔To Think About
 - Why is creative mode in Minecraft considered a game while a painting app is not?
 
-## 🏁Final Code
-- Combining classes, vectors, and our original code, we arrive at our [Day 02 Code](https://github.com/CS2510/Spring26-Day02-Animation).
-
 ## Ideas to explore on your own
-- Can you change the code to make all the vertices of the triangle to have their own independent velocity?
-  - Can you make the above change using arrays so that you don't need new variables for each vertex?
+- Can you make the code use arrays so that you don't need to manually call `lineTo` for each vertex?
 
 <br/><br/>
 ---
