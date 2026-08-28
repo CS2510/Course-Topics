@@ -4,16 +4,16 @@ These are the topics we are going to cover in class each day. Links to [example 
 # Day 02 - August 26 - Game Loop (🧑‍🏫Lecture 2)
 ![Game Loop Banner Image](support/loop.jpg)
 
-## 📢Announcements
-- No class on next week
+## 📺 Video Summary
+- Many of the topics from this lecture can be found in [this video about game loops](https://www.youtube.com/watch?v=zIxjCk4BCHE)
 
 ## 🔙Review
 - What is the difference between the Box Model, SVG, and Canvas?
 - What is the difference between the JS keyword `let` and `const`?
 
-## Syllabus
+## Syllabus Review
 
-## 💡New Idea: What is a computer game?
+## 💡New Idea: What is a computer game? (Review from previous day)
 - In this class, a game is an enjoyable, interactive, visual simulation.
 - How are we going to learn game programming?
   - Learn the math
@@ -21,30 +21,41 @@ These are the topics we are going to cover in class each day. Links to [example 
   - Practice
 
 ## 💡New Idea: Repeated rendering
+- We can manually call draw over and over to create an animation...
+- ... and using a `for` loop causes the browser to crash.
+- We need to find a way for the browser to call our code on a regular interval, which we can do with the `requestAnimationFrame` function
 - requestAnimationFrame
   - 🔗Additional information:
     - [MDN website about requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)
     - [W3 Schools requestAnimationFrame](https://www.w3schools.com/jsref/met_win_requestanimationframe.asp)
 
 ## 💡New Idea: Updating our game
-- MVC 
+- When we create a game, we want to strictly separate our game representation (model) from our draw code.
+- Technically, people call this the separation of our model and view
+- To do this correctly, we will have two functions, one called `update` that is in charge of update our game model and another called `draw` that updates the view
+- Since we will call `update` and `draw` repeatedly, one after another, we put these in a function called `gameLoop`
+- The game loop is the loop that will update and draw our game over and over again until the player is done.
+  - Note that even though it is called a game *loop*, in this class, we call the game loop with `requestAnimationFrame`, not a formal loop structure. 
+  - The reason for this is that in low-level languages where you have to build the threading for the game loop yourself, you traditionally do use a a loop strucuter
 - gameLoop formalization 
   - 🔗Additional information: [A blog post about what a game loop is](https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00)
 
 
 ## 💡New Idea: Vectors
+- We can move the position of a game object into a variable, but in order to do that, we need to create a class that stores two numberic variables and threats them as one *thing*.
 - What is a vector
   - 🔗Additional information: [A Wikipedia article about Vectors](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))
-- Adding Vectors
+- Vector Math: Adding Vectors
   - 🔗Additional information: [A website about adding vectors](https://mathworld.wolfram.com/VectorAddition.html)
 
 ## 💡New Idea: Physics (Math/Simulation)
-- We can use vectors to model the velocity of a game object
+- We can also use vectors to model the velocity of a game object
 - Velocity
   - 🔗Additional information: [A Wikipedia article about Velocity](https://en.wikipedia.org/wiki/Velocity)
 
 
 ## 💡New Idea: Classes in JS
+- In order to create a Vector2 in javascript, we need to use classes
 - classes in JS
   - 🔗Additional information: 
     - [MDN article about JS classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
@@ -73,6 +84,9 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 # Day 01 - August 24 - Introduction (🧑‍🏫Lecture 1)
 ![Game Loop Banner Image](support/drawing.jpg)
+
+## 📺 Video Summary
+- Many of the topics from this lecture can be found in [this video about game loops](https://www.youtube.com/watch?v=zIxjCk4BCHE)
 
 
 ## 📢Announcements
