@@ -1,6 +1,22 @@
 # CS 2510, Fall 2027, Topics
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
+# Day 03 - August 31 - Engines and Keyboard Input (🧑‍🏫Lecture 3)
+![Keyboard Banner Image](support/keyboard.jpg)
+
+## 🔙Review
+- What is a game loop?
+- What is a vector?
+
+## Module: [Intro to Game Engines](./modules/Intro%20to%20Game%20Engines.md)
+
+## Module: [Intro to Keyboard Input](./modules/Intro%20to%20Keyboard%20Input.md)
+
+
+<br/><br/>
+---
+---
+
 # Day 02 - August 26 - Game Loop (🧑‍🏫Lecture 2)
 ![Game Loop Banner Image](support/loop.jpg)
 
