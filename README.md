@@ -1,6 +1,24 @@
 # CS 2510, Fall 2027, Topics
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
+
+# Day 04 - September 2 - Standard Architecture for Games (🧑‍🏫Lecture 4)
+![Standard Architecture for Games Banner Image](support/plan.jpg)
+
+## 📢Announcements
+- Upcoming sprint expectations
+  - You can [study JS](https://javascript.info) as part of your sprint
+  - You can plan the scenes, game objects, and components in your game. Just make sure you can show it to us during the sprint.
+  - You can review/finish transcribing the engine. You can go through and add comments to help you understand the concepts.
+  - Otherwise, work on your engine and game
+
+## Module: [Standard Architecture for Games](./modules/Standard%20Architecture%20for%20Games.md)
+
+
+<br/><br/>
+---
+---
+
 # Day 03 - August 31 - Engines and Keyboard Input (🧑‍🏫Lecture 3)
 ![Keyboard Banner Image](support/keyboard.jpg)
 
