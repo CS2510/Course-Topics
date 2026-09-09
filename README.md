@@ -1,6 +1,87 @@
 # CS 2510, Fall 2027, Topics
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
+# Day 05 - September 9 - Engine-Level Components (🧑‍🏫Lecture 6)
+![A shuttle launch](support/caterpillar.jpg)
+
+
+## 💡New Idea: Transform
+  - All game objects will have a component called transform that tracks position
+  - Transform can be found by calling `transform` from the game object or component
+
+## 💡New Idea: Add `instantiate`
+  - Unity has a global function called `instantiate`. 
+  - We can mimic that behavior by creating a gloabl function called instantiate that points to `Scene.instantiate`
+  - Instantiate now takes a position argument, so we can position our game objects easily when we create scenes
+
+## 💡New Idea: Generic Polygon
+- We can create a component called Polygon that is generic to the engine
+- In order to do this, we need to have public variables on the component for the list of points to draw
+
+## 💡New Idea: Customizable Components
+- We can set options on the components inside of a game object
+- We can update `addComponent` so it takes an options argument.
+- We then take that options argument and apply it to the component
+
+## Activity: Look for Scenes, Game Objects, and Components
+- Look at a video about a game and look for scenes, game objects, and components
+
+> [!Note] FAQ: How do I add a new scene to my game?
+>
+> In the `game` folder, create a new file that follows this pattern:
+> ```javascript
+> class NewScene extends Scene{
+>   constructor(){
+>     super()
+>     this.instantiate(new /*reference to game object class you want to instantiate*/(), new Vector2(/*location of new game object*/)) 
+>     /* Continue adding game objects as needed */
+>   }
+> }
+> ```
+> ! Don't forget to add a `<script src="[scene file name].js"></src>` to your `index.html` file
+
+
+> [!Note] FAQ: How do I add a new game object to my game?
+>
+> In the `game` folder, create a new file that follows this pattern:
+> ```javascript
+> class NewGameObject extends GameObject{
+>   constructor(){
+>     super()
+>     this.addComponent(new /*reference to component class you want to add*/()) 
+>     /* Continue adding components as needed */
+>   }
+> }
+> ```
+> - Don't forget to add a `<script src="[game object file name].js"></src>` to your `index.html` file
+> - In order for you to see your new game object, it needs a component that draws
+> - You also need to add the game object to a scene before it will be in your game
+
+> [!Note] FAQ: How do I add a new component  to my game?
+>
+> In the `game` folder, create a new file that follows this pattern:
+> ```javascript
+> class NewComponent extends Component{
+>   start(){
+>     /* Code for the component when it starts*/
+>   }
+>   update(){
+>     /* Code for the component when it update*/
+>   }
+>   draw(ctx){
+>     /* Code for the component when it updates*/
+>   }
+> }
+> ```
+> - Don't forget to add a `<script src="[component file name].js"></src>` to your `index.html` file
+> - In order for your component to be in your game, it needs to be attached to a game object that is in a scene
+
+
+
+
+<br/><br/>
+---
+---
 
 # Day 04 - September 2 - Standard Architecture for Games (🧑‍🏫Lecture 4)
 ![Standard Architecture for Games Banner Image](support/plan.jpg)
