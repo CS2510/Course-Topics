@@ -1,6 +1,11 @@
 # CS 2510, Fall 2027, Topics
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
+
+# Day 06 - September 14  (👟Sprint 1)
+
+- Add a destroy function to game objects
+
 # Day 05 - September 9 - Engine-Level Components (🧑‍🏫Lecture 6)
 ![A shuttle launch](support/caterpillar.jpg)
 
