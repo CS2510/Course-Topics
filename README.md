@@ -2,31 +2,47 @@
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
 
+# Day 07 - September 16 - Communication Basics (🧑‍🏫Lecture 7)
+
+Add scale and rotate to transforms. See the [Module on Transforms](./modules/Transform%20-%20Basics.md)
+
+
+
+
+## Activity: Add an enemy ship to our game
+- Our ship has the same shape as our player ship
+  - We can save time by creating an asset and reusing it
+  - We can save time by rotating the ship asset for the enemy ship
+
+
+## Module: [Time.deltaTime](./modules/Time.deltaTime.md)
+
+## Module: [GameObject.name](./modules/GameObject.name.md)
+
+## Module: [Communication - GameObject.find](./modules/Communication%20-%20GameObject.find.md)
+
+## Module: [Basic Collisions](./modules/Basic%20Collisions.md)
+
+
+
+
 # Day 06 - September 14  (👟Sprint 1)
 
-- Add a destroy function to game objects
+## Module: [Game Object Lifecycle - Destroy](./modules/Game%20Object%20Lifecycle%20-%20Destroy.md)
+
 
 # Day 05 - September 9 - Engine-Level Components (🧑‍🏫Lecture 6)
 ![A shuttle launch](support/caterpillar.jpg)
 
+## Module: [Transform - Basics](./modules/Transform%20-%20Basics.md)
 
-## 💡New Idea: Transform
-  - All game objects will have a component called transform that tracks position
-  - Transform can be found by calling `transform` from the game object or component
+## Module: [Instantiate](./modules/Instantiate.md)
 
-## 💡New Idea: Add `instantiate`
-  - Unity has a global function called `instantiate`. 
-  - We can mimic that behavior by creating a gloabl function called instantiate that points to `Scene.instantiate`
-  - Instantiate now takes a position argument, so we can position our game objects easily when we create scenes
+## Module: [Polygon Component](./modules/Polygon%20Component.md)
 
-## 💡New Idea: Generic Polygon
-- We can create a component called Polygon that is generic to the engine
-- In order to do this, we need to have public variables on the component for the list of points to draw
+## Module: [Customizable Components](./modules/Customizable%20Components.md)
 
-## 💡New Idea: Customizable Components
-- We can set options on the components inside of a game object
-- We can update `addComponent` so it takes an options argument.
-- We then take that options argument and apply it to the component
+
 
 ## Activity: Look for Scenes, Game Objects, and Components
 - Look at a video about a game and look for scenes, game objects, and components
