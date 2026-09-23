@@ -2,7 +2,36 @@
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
 
-# Day 07 - September 16 - Communication Basics (🧑‍🏫Lecture 7)
+# Day 09 - September 23 - SceneManager & Globals (🧑‍🏫Lecture 7)
+
+## Module: [`SceneManager`](./modules/SceneManager.md)
+
+## Module: [`Globals`](./modules/Globals.md)
+
+- Level Controllers
+
+## 💡New Idea: Search game objects by attributes (tags)
+- Unity doesn't allow you to search for multiple game objects by name
+- Instead, we give game objects "tags", or a list of string attributes
+- This allows us to look for all game objects that are tagged as enemies or UI
+- The function we add is `GameObject.findGameObjectsWithTag`
+  
+
+
+
+
+
+
+
+# Day 08 - September 21  (👟Sprint 2)
+
+
+## Module: [`getComponent`](./modules/GetComponent.md)
+
+## Module: [`TextLabel`](./modules/TextLabel.md)
+
+
+# Day 07 - September 16 - Communication Basics (🧑‍🏫Lecture 6)
 
 Add scale and rotate to transforms. See the [Module on Transforms](./modules/Transform%20-%20Basics.md)
 
@@ -31,7 +60,7 @@ Add scale and rotate to transforms. See the [Module on Transforms](./modules/Tra
 ## Module: [Game Object Lifecycle - Destroy](./modules/Game%20Object%20Lifecycle%20-%20Destroy.md)
 
 
-# Day 05 - September 9 - Engine-Level Components (🧑‍🏫Lecture 6)
+# Day 05 - September 9 - Engine-Level Components (🧑‍🏫Lecture 5)
 ![A shuttle launch](support/caterpillar.jpg)
 
 ## Module: [Transform - Basics](./modules/Transform%20-%20Basics.md)
