@@ -3,18 +3,33 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 
-# Day 11 - September 30 - Camers and Layers (🧑‍🏫Lecture 8)
+# Day 12 - October 5  (👟Sprint 4)
+
+## Topics covered briefly
+- Line wrapping in TextLabels (do it yourself)
+- Scene background bug
+- JSDoc so VS Code is helpful
+- Scale/rotate bug (make sure your code is updated)
+- Review AI policy
+- Compare code (e.g. githubcompare.com)
+- Negative scales produce a flip
+- Transparency in colors
+
+# Day 11 - September 30 - Cameras and Layers (🧑‍🏫Lecture 8)
+
+## Module: [`broadcastMessage`](./modules/broadcastMessage.md)
+
+## Module: [Layers](./modules/Layers.md)
+
+## Module: [Cameras](./modules/Cameras.md)
 
 
+## 💡New Idea: Scenes can have background colors
+- This allows you to really differentiate start and stop scenes from the main game scenes
+- The Camera component of the main camera stores the background color
 
 
-
-
-
-# Day 20 - September 28  (👟Sprint 3)
-
-
-
+# Day 10 - September 28  (👟Sprint 3)
 
 
 
