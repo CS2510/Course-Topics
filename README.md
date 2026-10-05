@@ -2,6 +2,22 @@
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
 
+
+# Day 11 - September 30 - Camers and Layers (🧑‍🏫Lecture 8)
+
+
+
+
+
+
+
+# Day 20 - September 28  (👟Sprint 3)
+
+
+
+
+
+
 # Day 09 - September 23 - SceneManager & Globals (🧑‍🏫Lecture 7)
 
 ## Module: [`SceneManager`](./modules/SceneManager.md)
@@ -76,55 +92,6 @@ Add scale and rotate to transforms. See the [Module on Transforms](./modules/Tra
 ## Activity: Look for Scenes, Game Objects, and Components
 - Look at a video about a game and look for scenes, game objects, and components
 
-> [!Note] FAQ: How do I add a new scene to my game?
->
-> In the `game` folder, create a new file that follows this pattern:
-> ```javascript
-> class NewScene extends Scene{
->   constructor(){
->     super()
->     this.instantiate(new /*reference to game object class you want to instantiate*/(), new Vector2(/*location of new game object*/)) 
->     /* Continue adding game objects as needed */
->   }
-> }
-> ```
-> ! Don't forget to add a `<script src="[scene file name].js"></src>` to your `index.html` file
-
-
-> [!Note] FAQ: How do I add a new game object to my game?
->
-> In the `game` folder, create a new file that follows this pattern:
-> ```javascript
-> class NewGameObject extends GameObject{
->   constructor(){
->     super()
->     this.addComponent(new /*reference to component class you want to add*/()) 
->     /* Continue adding components as needed */
->   }
-> }
-> ```
-> - Don't forget to add a `<script src="[game object file name].js"></src>` to your `index.html` file
-> - In order for you to see your new game object, it needs a component that draws
-> - You also need to add the game object to a scene before it will be in your game
-
-> [!Note] FAQ: How do I add a new component  to my game?
->
-> In the `game` folder, create a new file that follows this pattern:
-> ```javascript
-> class NewComponent extends Component{
->   start(){
->     /* Code for the component when it starts*/
->   }
->   update(){
->     /* Code for the component when it update*/
->   }
->   draw(ctx){
->     /* Code for the component when it updates*/
->   }
-> }
-> ```
-> - Don't forget to add a `<script src="[component file name].js"></src>` to your `index.html` file
-> - In order for your component to be in your game, it needs to be attached to a game object that is in a scene
 
 
 
@@ -185,53 +152,15 @@ Add scale and rotate to transforms. See the [Module on Transforms](./modules/Tra
   - Learn the architecture
   - Practice
 
-## 💡New Idea: Repeated rendering
-- We can manually call draw over and over to create an animation...
-- ... and using a `for` loop causes the browser to crash.
-- We need to find a way for the browser to call our code on a regular interval, which we can do with the `requestAnimationFrame` function
-- requestAnimationFrame
-  - 🔗Additional information:
-    - [MDN website about requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)
-    - [W3 Schools requestAnimationFrame](https://www.w3schools.com/jsref/met_win_requestanimationframe.asp)
-
-## 💡New Idea: Updating our game
-- When we create a game, we want to strictly separate our game representation (model) from our draw code.
-- Technically, people call this the separation of our model and view
-- To do this correctly, we will have two functions, one called `update` that is in charge of update our game model and another called `draw` that updates the view
-- Since we will call `update` and `draw` repeatedly, one after another, we put these in a function called `gameLoop`
-- The game loop is the loop that will update and draw our game over and over again until the player is done.
-  - Note that even though it is called a game *loop*, in this class, we call the game loop with `requestAnimationFrame`, not a formal loop structure. 
-  - The reason for this is that in low-level languages where you have to build the threading for the game loop yourself, you traditionally do use a a loop strucuter
-- gameLoop formalization 
-  - 🔗Additional information: [A blog post about what a game loop is](https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00)
 
 
-## 💡New Idea: Vectors
-- We can move the position of a game object into a variable, but in order to do that, we need to create a class that stores two numberic variables and threats them as one *thing*.
-- What is a vector
-  - 🔗Additional information: [A Wikipedia article about Vectors](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))
-- Vector Math: Adding Vectors
-  - 🔗Additional information: [A website about adding vectors](https://mathworld.wolfram.com/VectorAddition.html)
 
-## 💡New Idea: Physics (Math/Simulation)
-- We can also use vectors to model the velocity of a game object
-- Velocity
-  - 🔗Additional information: [A Wikipedia article about Velocity](https://en.wikipedia.org/wiki/Velocity)
+## Module: [Introduction to Game Loop](./modules/Intro%20to%20Game%20Loop.md)
 
+## Module: [Introduction to Vectors](./modules/Introduction%20to%20Vectors.md)
 
-## 💡New Idea: Classes in JS
-- In order to create a Vector2 in javascript, we need to use classes
-- classes in JS
-  - 🔗Additional information: 
-    - [MDN article about JS classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-    - [W3 Schools about JS classes](https://www.w3schools.com/js/js_classes.asp)
-- constructors in JS
-  - 🔗Additional information:
-    - [MDN article about constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) 
-    - [W3 Schools article about constructors](https://www.w3schools.com/jsref/jsref_constructor_class.asp)
-- class functions in JS
-- fields in JS
-  - 🔗Additional information: [MDN article about class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
+## Module: [Classes in Javascript](./modules/Classes%20in%20Javascript.md)
+
 
 ## 👩‍💻Activity
 - Create a simple moving game object simulation using the new Vector2 class. 
@@ -258,24 +187,7 @@ Add scale and rotate to transforms. See the [Module on Transforms](./modules/Tra
 - Welcome to class
 - Get a GitHub account
 
-## 💡New Idea: Game Programming Courses at UNO
-- Game Programming Course Layout:
-  - ```mermaid
-    graph LR
-      CS2510["CS2510 Introduction to Game Programming"]-->CS3510["CS3510 Advanced Game Programming"]
-      CS2510-->CS4620["CS4620 3D Computer Graphics"]
-    ```
-  - CS 2510, Introduction to Game Programming
-    - Build a 2D game engine and a game from scratch in JavaScript
-  - CS 3510, Advanced Game Programming
-    - Build a 3D game using a commercial game engine (Unity) as a team
-  - CS 4620, 3D Graphics
-    - Understand how to create and drawing 3D assets
-  
- ## 💡New Idea: Other Game Programming Resources at UNO 
- - Many students use their capstone to build something game-related
- - The art department has courses on developing 2D and 3D assets
- - Maverick Meadow in the UNO student organization focused on game development
+## Module: [Game Programming Courses](./modules/Game%20Programming%20Courses.md)
 
 
 ## 🎉Course Goals
@@ -287,77 +199,11 @@ Add scale and rotate to transforms. See the [Module on Transforms](./modules/Tra
 - I will be using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code, but you don't have to.
 - You can see some [examples of what previous students have done on YouTube](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg)
   
+## Module: [Drawing in HTML](./modules/Drawing%20in%20HTML.md)
 
+## Module: [Intro to JavaScript](./modules/Intro%20to%20Javascript.md)
+
+## Module: [Drawing to a Canvas](./modules/Drawing%20on%20a%20Canvas.md)
   
-## 💡New Idea: Macro view of methods of drawing in HTML
 
-- Box Model
-    - ![NY Times Cover for Pearl Harbor](https://imgs.search.brave.com/gCMYaUi_uIB4kT_cUoc9jL9VtQyFSa_GWYGpQtgLIcA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFtem02Z3IzRkwu/anBn)
-    - 🔗Addition information at:
-      - [W3 Schools about the box model](https://www.w3schools.com/css/css_boxmodel.asp)
-      - [MDN about the box model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
-- SVG
-    - 🔗Additional information at:
-      - [MDN about SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML)
-      - [W3 Schools about SVG](https://www.w3schools.com/graphics/svg_intro.asp)
-- Canvas
-    - 🔗Additional information at:
-      - [W3 Schools about canvas](https://www.w3schools.com/html/html5_canvas.asp)
-      - [MDN about canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-
-
-
-## 💡New Idea: New JS concepts
-
-- Structure of an HTML document
-  - doctype
-  - html
-  - head
-  - body
-  - script
-  - Example code: [Code from the instructor showing basic HTML Structure on GitHub](https://github.com/CS2510/Day01.Drawing-Introduction/blob/main/00_html_structure.html)
-  - 🔗Additional information: [W3 Schools Introduction to HTML](https://www.w3schools.com/html/html_intro.asp)
-
-- Access elements in JS
-  - 🔗Additional information: [W3 article about Query Selector](https://www.w3schools.com/jsref/met_document_queryselector.asp)
-
-- Declaring variables in JS
-  - let and const
-  - Example code: [A file written by the instructor that is designed to teach about JavaScript](./JS.html)
-  - 🔗Additional information: [Geeks for Geeks about let and const](https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/)
-
-- Good Introductory Websites in JS
-  - [JavaScript.info Tutorial Site](https://javascript.info)
-  - [W3 Schools JS tutorials](https://www.w3schools.com/js/)
-  - [Geeks for Geeks JS tutorials](https://www.geeksforgeeks.org/javascript/javascript-tutorial/)
-
-## 💡New Idea: Methods of drawing specific to canvas
-- Showing color
-  - See slides: 3 Ways to show Color
-  - 🔗Additional information: [W3 School about named colors](https://www.w3schools.com/html/html_colors.asp)
-  - 🔗Additional information: [Website about rgb and hexadecimal values](https://htmlcolorcodes.com/color-picker/)
-- Paths/Polygons
-  - 🔗Additional information: [Website about drawing paths](https://www.w3resource.com/html5-canvas/html5-canvas-path.php)
-- Circles (Arcs)
-    - Introduction to radians
-- Text
-  - See slides: Fonts
-  - 🔗Additional information: 
-      - [MDN about drawing text](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text)
-      - [W3 Schools about drawing text](https://www.w3schools.com/graphics/canvas_text.asp)
-- Example code: [Code written by the instructor to show what we are learning](https://github.com/CS2510/Day01.Drawing-Introduction/blob/main/01_basic_drawing.html)
-
-
-
-## 👩‍💻Activity
-- Take what we have learned about drawing and draw something more advanced. Here are some ideas to try:
-  - [Batman Logos](https://flowingdata.com/2012/12/24/evolution-of-batman-logo-1940-2012/)
-  - ![Mickey Mouse Head](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5ejW-uLTRXHprPAMrWZUOFD1nWv7xpnvYw&s)
-
-## 🤔To Think About
-- Use an HTML canvas to draw the basic outline of a game you like. We can call this "blocking" out a game.
-- Block out a game you enjoy using the basic drawing tools we use in class. Here are some examples of the instructor blocking out the original [Super Mario Bros](https://en.wikipedia.org/wiki/Super_Mario_Bros.) game.
-- Example code:
-  - [Example code from the instructor showing how to block a game using arrays](https://github.com/CS2510/Day01.Drawing-Introduction/blob/main/02_blocking_a_game.html)
-  - [Example code from the instructor showing how to block a game drawing "freehand" ](https://github.com/CS2510/Day01.Drawing-Introduction/blob/main/03_blocking_a_game_2.html)
 

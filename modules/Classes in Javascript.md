@@ -1,0 +1,13 @@
+## 💡New Idea: Classes in JS
+- In order to create a Vector2 in javascript, we need to use classes
+- classes in JS
+  - 🔗Additional information: 
+    - [MDN article about JS classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+    - [W3 Schools about JS classes](https://www.w3schools.com/js/js_classes.asp)
+- constructors in JS
+  - 🔗Additional information:
+    - [MDN article about constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) 
+    - [W3 Schools article about constructors](https://www.w3schools.com/jsref/jsref_constructor_class.asp)
+- class functions in JS
+- fields in JS
+  - 🔗Additional information: [MDN article about class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)

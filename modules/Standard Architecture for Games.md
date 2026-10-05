@@ -43,3 +43,53 @@ flowchart LR
 
 ## 🤔To Think About
 - Can you add a second game object that has a random velocity and is colored red using this architecture?
+
+> [!Note] FAQ: How do I add a new scene to my game?
+>
+> In the `game` folder, create a new file that follows this pattern:
+> ```javascript
+> class NewScene extends Scene{
+>   constructor(){
+>     super()
+>     this.instantiate(new /*reference to game object class you want to instantiate*/(), new Vector2(/*location of new game object*/)) 
+>     /* Continue adding game objects as needed */
+>   }
+> }
+> ```
+> ! Don't forget to add a `<script src="[scene file name].js"></src>` to your `index.html` file
+
+
+> [!Note] FAQ: How do I add a new game object to my game?
+>
+> In the `game` folder, create a new file that follows this pattern:
+> ```javascript
+> class NewGameObject extends GameObject{
+>   constructor(){
+>     super()
+>     this.addComponent(new /*reference to component class you want to add*/()) 
+>     /* Continue adding components as needed */
+>   }
+> }
+> ```
+> - Don't forget to add a `<script src="[game object file name].js"></src>` to your `index.html` file
+> - In order for you to see your new game object, it needs a component that draws
+> - You also need to add the game object to a scene before it will be in your game
+
+> [!Note] FAQ: How do I add a new component  to my game?
+>
+> In the `game` folder, create a new file that follows this pattern:
+> ```javascript
+> class NewComponent extends Component{
+>   start(){
+>     /* Code for the component when it starts*/
+>   }
+>   update(){
+>     /* Code for the component when it update*/
+>   }
+>   draw(ctx){
+>     /* Code for the component when it updates*/
+>   }
+> }
+> ```
+> - Don't forget to add a `<script src="[component file name].js"></src>` to your `index.html` file
+> - In order for your component to be in your game, it needs to be attached to a game object that is in a scene
