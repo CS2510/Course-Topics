@@ -3,6 +3,61 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 
+
+# Day 13 - October 07 - Game Object Children and Mouse (🧑‍🏫Lecture 9)
+
+![Hierarchy Banner Image](./support/hierarchy.jpg)
+
+## 🖼️Activity: Game are built using hierarchies
+- Look for game object hierarchies in [Mario Kart 64](https://www.youtube.com/watch?v=w8K-heSWX8s)
+- Look how game object hierarchies are used in [Echoes of Wisdom](https://youtu.be/01onjjAUnOQ?si=_08wHwSa2sMCxuGz&t=123)
+- Look how game object hierarchies are used in [Zero Company](https://www.youtube.com/watch?v=rcxnRaZ6slU)
+- Look how game object hierarchy are used in [Zelda Tears of the Kingdom](https://www.youtube.com/watch?v=m9_O94KqRAo)
+
+## 💡New Idea: Game Object Can Have Child Game Objects
+- This create powerful hierarchies
+  - Allows for game objects to "hold" other game objects
+  - Easy alignment of UI
+  - Complex rotational movements
+
+## 👩‍💻Code Together: Game Object Hierarchy
+- Update Transform
+  - setParent
+  - getLocalMatrix
+  - getGlobalMatrix
+- Update GameObject draw
+- Update Collisions
+- Orbiting colliders
+
+## 🖼️Activity: Look at an early game that used the mouse
+- 1993's The Incredible Machine utilized the mouse to create a novel puzzle game
+- [Gameplay from The Incredible Machine](https://www.youtube.com/watch?v=pTbSMKGQ_rU)
+
+## 💡New Idea: Input This Frame
+- We often need to know when a key or mouse button goes down or up, not just when it is held down
+  - For example, when to fire a laser or when to "click" a button
+- To do this, we need to track what input events happened each frame.
+- We clear what happened each frame with an update function in Input
+
+
+## 💡New Idea: Mouse Input
+- The mouse buttons are labeled 0 (left), 1 (middle), and 2 (right)
+- We can add mouse button events to our game engine
+
+
+## 🖼️Activity: Look at an early game that used the mouse
+- Deja Vu: A Nightmare Come True was an early escape room game
+- [Gameplay from Deja Vu: A Nightmare Come True](https://www.youtube.com/watch?v=xwrqhsTFTVU)
+
+
+## 🧭Ideas to explore on your own
+- How can you convert your game to use hierarchies?
+- Why do many games use a combination of inputs, e.g. mouse and keyboard instead of just keyboard or mouse?
+
+<br/><br/>
+---
+---
+
 # Day 12 - October 5  (👟Sprint 4)
 
 ## Topics covered briefly
@@ -31,7 +86,11 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 # Day 10 - September 28  (👟Sprint 3)
 
+[No additional topics covered]
 
+<br/><br/>
+---
+---
 
 # Day 09 - September 23 - SceneManager & Globals (🧑‍🏫Lecture 7)
 
@@ -52,6 +111,9 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 
+<br/><br/>
+---
+---
 
 
 # Day 08 - September 21  (👟Sprint 2)
@@ -60,6 +122,11 @@ These are the topics we are going to cover in class each day. Links to [example 
 ## Module: [`getComponent`](./modules/GetComponent.md)
 
 ## Module: [`TextLabel`](./modules/TextLabel.md)
+
+
+<br/><br/>
+---
+---
 
 
 # Day 07 - September 16 - Communication Basics (🧑‍🏫Lecture 6)
@@ -85,11 +152,18 @@ Add scale and rotate to transforms. See the [Module on Transforms](./modules/Tra
 
 
 
+<br/><br/>
+---
+---
 
 # Day 06 - September 14  (👟Sprint 1)
 
 ## Module: [Game Object Lifecycle - Destroy](./modules/Game%20Object%20Lifecycle%20-%20Destroy.md)
 
+
+<br/><br/>
+---
+---
 
 # Day 05 - September 9 - Engine-Level Components (🧑‍🏫Lecture 5)
 ![A shuttle launch](support/caterpillar.jpg)
