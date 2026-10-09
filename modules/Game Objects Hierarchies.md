@@ -1,5 +1,6 @@
 ---
 title: Game Object Hierarchies
+layout: default
 ---
 
 ## 🖼️Activity: Game are built using hierarchies
