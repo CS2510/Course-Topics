@@ -1,3 +1,6 @@
+---
+title: Game Object Hierarchies
+---
 
 ## 🖼️Activity: Game are built using hierarchies
 - Look for game object hierarchies in [Mario Kart 64](https://www.youtube.com/watch?v=w8K-heSWX8s)
