@@ -3,6 +3,35 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 
+# Day 15 - October 14 - Collisions 1 (🧑‍🏫Lecture 10)
+
+![A shuttle launch](support/shuttle.jpg)
+
+## 🖼️Activity:
+- Look at collisions in a game: https://www.allsonicgames.net/sonic-the-hedgehog.php
+
+## Module: [Vector Operations](./modules/Vector%20Operations.md)
+
+## Module: [Separate Axis Theorem](./modules/Separate%20Axis%20Theorem.md)
+
+
+<br/><br/>
+---
+---
+
+
+# Day 14 - October 12  (👟Sprint 5)
+
+## Topics covered briefly
+- Mouse Move
+- Text Height
+  
+<br/><br/>
+---
+---
+
+
+
 
 # Day 13 - October 07 - Game Object Children and Mouse (🧑‍🏫Lecture 9)
 
@@ -69,6 +98,11 @@ These are the topics we are going to cover in class each day. Links to [example 
 - Compare code (e.g. githubcompare.com)
 - Negative scales produce a flip
 - Transparency in colors
+  
+<br/><br/>
+---
+---
+
 
 # Day 11 - September 30 - Cameras and Layers (🧑‍🏫Lecture 8)
 
