@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman   # or whichever theme you're using
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
