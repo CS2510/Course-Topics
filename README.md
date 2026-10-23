@@ -2,10 +2,40 @@
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
 
+# Day 16 - October 21 - Collisions 2 (🧑‍🏫Lecture 11)
+
+# New Idea: Collisions Between Multiple Polygons
+- Update the separate axis theorem to handle to polygons
+- Each polygon is moved from model space to world space
+- Each polygons is used to find edges
+- Each polygon is project down each edge
+- If there is a gap, there is not a collision
+- If there is a gap, there is a collision.
+
+# New Idea: Colliders
+- We want the engine to keep track of collisions for game objects that have been "labeled" with a Collider component
+  - We can use colliders to simplify hit boxes
+- The engine will track anything that has a Collider component
+- The engine will send events when there is a collision with the game objects in question
+- Components can listen for these events to fire
+
+# New Idea: Mouse Over Events
+- The engine will report when the mouse is over a game object
+- We need to move the mouse from screen space (pixels) into world space
+- We invert the camera matrix and the matrix that moves the origin to the center of the screen
+- We then report overlap
+- Components can listen for these events to fire
+
+# October 19 - No Class, University Holiday
 
 # Day 15 - October 14 - Collisions 1 (🧑‍🏫Lecture 10)
 
 ![A shuttle launch](support/shuttle.jpg)
+
+# Multiline Text Label
+- Break the text of the label down using `split`
+- Add each word to the current line. 
+- If the line is now too long, write the line without the word.
 
 ## 🖼️Activity:
 - Look at collisions in a game: https://www.allsonicgames.net/sonic-the-hedgehog.php
@@ -13,6 +43,9 @@ These are the topics we are going to cover in class each day. Links to [example 
 ## Module: [Vector Operations](./modules/Vector%20Operations.md)
 
 ## Module: [Separate Axis Theorem](./modules/Separate%20Axis%20Theorem.md)
+
+<img src="./whiteboard/day15/a.jpg" alt="Description" style="max-width: 300px; max-height: 300px;">
+<img src="./whiteboard/day15/b.jpg" alt="Description" style="max-width: 300px; max-height: 300px;">
 
 
 <br/><br/>
