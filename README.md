@@ -2,6 +2,27 @@
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
 
+# Day 20 - November 4 - Phiscs 3 (🧑‍🏫Lecture 13)
+
+
+## Module: [fixedUpdate](./modules/Fixed%20Update.md)
+
+## Module: [Detailed Collisions](./modules/Detailed%20Collisions.md)
+
+## Module: [Platformer Dynamics](./modules/Platformer%20Dynamics.md)
+
+
+
+# Day 19 - November 2  (👟Sprint 8)
+
+## Topics covered briefly
+- A website for comparing GitHub repos: https://bricks-teaching.github.io/differ/
+- Fixed a bug that prevented onMouseOver from being called on UI game objects
+
+  
+<br/><br/>
+---
+---
 
 
 # Day 18 - October 28 - Phiscs 1 (🧑‍🏫Lecture 12)
@@ -61,7 +82,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 
-# Day 17 - October 26  (👟Sprint 6)
+# Day 17 - October 26  (👟Sprint 7)
 
 ## Topics covered briefly
 - "Diffing" code using open source tools, such as KDiff 3
