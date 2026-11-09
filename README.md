@@ -1,6 +1,20 @@
 # CS 2510, Fall 2027, Topics
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) 
 
+<br/><br/>
+---
+---
+
+
+# Day 21 - November 9  (👟Sprint 9)
+
+## Topics covered briefly
+- Disabling the right mouse context menu.
+
+  
+<br/><br/>
+---
+---
 
 # Day 20 - November 4 - Phiscs 3 (🧑‍🏫Lecture 13)
 
