@@ -5,6 +5,50 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 22 - November 11 - Aspect Ratios & Letter Boxing (🧑‍🏫Lecture 14)
+
+
+## 🖼️Activity:
+- Identify letterboxing in games. For example, how is letter boxing used in [Brawl Stars](https://www.youtube.com/watch?v=j6nQgmtcN18)
+- Look at the aspect ratios used in iPhones over time. We can't predict the aspect ratio that the user will have, thus necessetating letter boxing.
+- The term letter boxing comes from early film where there were different aspect ratios in use--letter boxing was the solution.
+
+## 💡New Idea:
+- Letter boxing allows a game to have a fixed aspect ratio. This means your game will look the same, regardless of the size of the browser window.
+  - This makes it easier to predict what the user will see
+  - This can be used to prevent cheating or unfair advantanges on eGames
+  - This is *really* helpful when it comes to designing a UI
+
+## 👩‍💻Code Together:
+- Add letter boxing to our game
+  - We need to specify the aspect ratio that we want in our game
+    - If the desired aspect ratio is greater than the current aspect ratio, then we will have horizontal letter boxing (top and bottom)
+    - If the desired aspect ratio is less than the current aspect ratio, then we will have vertical letter boxing (left and right)
+  - We need to specify the width of the camera in world space
+    - When we draw a scene, after we translate to the center, we scale by `Engine.canvas.width`/`Engine.cameraWidthInWorldSpace`
+    - We need to add this scale to the `onMouseOver` calculations.
+    - If we have letter boxes, then the scale changes to be `(Engine.canvas.width-Engine.letterBoxingWidth)`/`Engine.cameraWidthInWorldSpace`
+  - We draw letter boxing after we draw the scene
+  - We draw four letter boxing rectangles, but at least two of them will have a width or height of 0, so they won't be seen
+  - The game objects drawn in world space do not need to be offset by the letter boxing
+  - The game objects drawn in UI space can be offset. Some games draw the UI on the screen regardless of letterboxing while other only put the UI inside the letter boxing.
+  - We need to store the current size of the letter boxing in the Engine so it can be used throughout the game
+  - Letter boxing will also affect our screen space to UI space calculations, so this will alter our calculations about where the mouse is when we are checking for collisions in UI space.
+  - A more advanced approach would be to use clipping so the letterboxing isn't covering what is already drawn
+
+## 🧭Ideas to explore on your own
+- How could you add letter boxing to your game that doesn't use plain rectangles.
+- Browsers can be shrunk down to very small sizes. There are ways to try to force a browser window to be a certain size, but there are really no guarantees.
+- Can you find examples of letter boxing in other games?
+
+
+
+<br/><br/>
+---
+---
+
+
+
 
 # Day 21 - November 9  (👟Sprint 9)
 
@@ -16,7 +60,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 20 - November 4 - Phiscs 3 (🧑‍🏫Lecture 13)
+# Day 20 - November 4 - Physics 3 (🧑‍🏫Lecture 13)
 
 
 ## Module: [fixedUpdate](./modules/Fixed%20Update.md)
