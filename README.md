@@ -5,6 +5,50 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 24 - November 18 - RectTransforms for the UP (🧑‍🏫Lecture 15)
+
+## 💡New Idea: RectTransform
+- We need more power to place items on the UI
+- Not everything is anchored to the upper left
+- Some UI elements will expand and shrink relative to the screen (relative sizing or relative positioning)
+- Some UI elements do not change size when the screen size changes (absolute sizing or relative positioning)
+- RectTransform gives us the flexibility to do this
+
+## 💡New Idea: RectTransform - Anchors
+- Anchors allow up to position items relative to the screen
+- Anchors allows us to size items relative to the screen
+- The values in `anchorMin` and `anchorMax` give us the rectangle or point that define the relative parts of the UI element
+  
+
+  ## 💡New Idea: RectTransform - Offsets
+  - Offsets give us the pixel (absolute) change from the anchors
+  - This allows us to position and size items as a combination of both relative and absolute.
+
+
+## 💡New Idea: Transparency/Opacticy/Alpha
+- Setting an alpha value allows us to use traditional colors but all some transparency
+
+
+<img src="./whiteboard/day24/a.jpg" alt="Description" style="max-width: 300px; max-height: 300px;">
+<img src="./whiteboard/day24/b.jpg" alt="Description" style="max-width: 300px; max-height: 300px;">
+
+<br/><br/>
+---
+---
+
+
+# Day 23 - November 16  (👟Sprint 10)
+
+## Topics covered briefly
+- Collision Layers
+
+
+<img src="./whiteboard/day23/a.jpg" alt="Description" style="max-width: 300px; max-height: 300px;">
+  
+<br/><br/>
+---
+---
+
 # Day 22 - November 11 - Aspect Ratios & Letter Boxing (🧑‍🏫Lecture 14)
 
 
