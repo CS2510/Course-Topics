@@ -27,6 +27,7 @@ Key:
 ## Simulation
 - ❌There is some NPC behavior
 - ✅The game/engine supports collisions and collision resolution
+- ✅The game supports physics
 - ✅The game supports collision layers
 
 # Mastery
@@ -34,6 +35,7 @@ You can do a lot of things to go above and beyond in your engine or game. Here a
 - Make an extensive game
 - Make a detailed game
 - Make a game that feels complete
+- The game is published in itch.io
 - Implement particle systems in your engine and use them
 - Implement Behavior Trees in your engine and use them
 - Implement Letter Boxing in your engine and use it
